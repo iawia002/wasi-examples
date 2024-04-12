@@ -27,3 +27,8 @@ wit-bindgen-rt = "0.24.0"
 [build-dependencies]
 wit-deps = "0.3.1"
 anyhow = "1.0.82"
+
+# reduce wasm binary size
+[profile.release]
+lto = true
+strip = "symbols"
