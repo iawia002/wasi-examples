@@ -1,0 +1,5 @@
+package iawia002:wasi-examples-http;
+
+world http {
+  include wasi:http/proxy@0.2.0;
+}

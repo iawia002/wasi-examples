@@ -1,0 +1,32 @@
+[package]
+name = "http"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "component:wasi-examples-http"
+
+[package.metadata.component.dependencies]
+
+[package.metadata.component.target.dependencies]
+"wasi:cli" = { path = "wit/deps/cli" }
+"wasi:clocks" = { path = "wit/deps/clocks" }
+"wasi:filesystem" = { path = "wit/deps/filesystem" }
+"wasi:http" = { path = "wit/deps/http" }
+"wasi:io" = { path = "wit/deps/io" }
+"wasi:random" = { path = "wit/deps/random" }
+"wasi:sockets" = { path = "wit/deps/sockets" }
+
+[dependencies]
+wit-bindgen-rt = "0.24.0"
+url = "2.5.0"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+
+[build-dependencies]
+wit-deps = "0.3.1"
+anyhow = "1.0.82"
