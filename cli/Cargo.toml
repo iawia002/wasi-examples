@@ -22,6 +22,7 @@ package = "component:wasi-examples-cli"
 
 [dependencies]
 bitflags = "2.5.0"
+clap = { version = "4.5.4", features = ["derive"] }
 wit-bindgen-rt = "0.24.0"
 
 [build-dependencies]
