@@ -1,0 +1,5 @@
+package iawia002:wasi-examples-http-client;
+
+world http-client {
+  include wasi:cli/command@0.2.0;
+}
