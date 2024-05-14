@@ -427,7 +427,6 @@ name = "cli"
 version = "0.0.0"
 dependencies = [
  "anyhow",
- "bitflags 2.5.0",
  "clap",
  "wit-bindgen-rt",
  "wit-deps",
@@ -2038,6 +2037,9 @@ name = "wit-bindgen-rt"
 version = "0.24.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3b0780cf7046630ed70f689a098cd8d56c5c3b22f2a7379bbdb088879963ff96"
+dependencies = [
+ "bitflags 2.5.0",
+]
 
 [[package]]
 name = "wit-deps"

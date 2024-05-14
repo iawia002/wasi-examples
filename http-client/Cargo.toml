@@ -21,9 +21,8 @@ package = "component:wasi-examples-http-client"
 "wasi:random" = { path = "wit/deps/random" }
 
 [dependencies]
-bitflags = "2.5.0"
+wit-bindgen-rt = { version = "0.24.0", features = ["bitflags"] }
 wasi-http-client = "0.1.0"
-wit-bindgen-rt = "0.24.0"
 
 [build-dependencies]
 wit-deps = "0.3.1"
