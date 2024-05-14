@@ -7,7 +7,7 @@ This example is built using the [WASI Preview 2 API](https://github.com/WebAssem
 First, install [cargo component](https://github.com/bytecodealliance/cargo-component):
 
 ```
-cargo install cargo-component
+cargo install cargo-component@0.11.0
 ```
 
 Then execute the following command to compile it into a WASM program:
