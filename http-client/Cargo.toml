@@ -22,7 +22,8 @@ package = "component:wasi-examples-http-client"
 
 [dependencies]
 wit-bindgen-rt = { version = "0.24.0", features = ["bitflags"] }
-wasi-http-client = "0.1.0"
+wasi-http-client = { version = "0.2.1", features = ["json"] }
+serde = { version = "1.0.202", features = ["derive"] }
 
 [build-dependencies]
 wit-deps = "0.3.1"
